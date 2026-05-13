@@ -157,31 +157,7 @@ overflow:hidden;
   background: #e60073;
   transform: scale(1.05);
 }
-@media (max-width:768px){
 
-  .main-layout{
-    display:block !important;
-    width:100% !important;
-  }
-
-  .products{
-    display:grid !important;
-    grid-template-columns:1fr !important;
-    width:100% !important;
-    gap:25px !important;
-  }
-
-  .product-card{
-    width:100% !important;
-    max-width:100% !important;
-    box-sizing:border-box !important;
-  }
-
-  body{
-    overflow-x:hidden !important;
-  }
-
-}
 .checkout-btn {
   margin-top: 12px;
   padding: 10px 15px;
@@ -368,6 +344,59 @@ overflow:hidden;
 
 .fav-btn:hover{
   transform:scale(1.1);
+}
+    @media (max-width:768px){
+
+  .navbar{
+    flex-direction:column !important;
+    gap:15px !important;
+  }
+
+  #arama{
+    width:90% !important;
+  }
+
+  .main-layout{
+    display:block !important;
+    width:100% !important;
+  }
+
+  .products{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:25px !important;
+    width:100% !important;
+    overflow:visible !important;
+  }
+
+  .product-card{
+    width:100% !important;
+    max-width:100% !important;
+    box-sizing:border-box !important;
+  }
+
+  .cart-box{
+    width:100% !important;
+    position:static !important;
+    box-sizing:border-box !important;
+    margin-top:25px !important;
+  }
+
+  .login-box{
+    width:100% !important;
+    box-sizing:border-box !important;
+    flex-direction:column !important;
+  }
+
+  .login-box input,
+  .login-box button{
+    width:100% !important;
+    box-sizing:border-box !important;
+  }
+
+  body{
+    overflow-x:hidden !important;
+  }
 }
   </style>
 </head>
